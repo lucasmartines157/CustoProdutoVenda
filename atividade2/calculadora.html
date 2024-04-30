@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    body>
+    <h1>Que leia dois valores, pergunte se a pessoa quer (somar, subtrair, dividir ou multiplicar) e retorne o calculo escolhido.
+    </h1>
+    <p>valor1: <span id="primeiroValor"></span></p>
+    <p>valor2: <span id="segundoValor"></span></p>
+    <p>operacao: <span id="operacaoEscolhida"></span></p>
+    <p>resultado: <span id="resultadoFinal"></span></p>
+    <script>
+        let valor1;
+        let valor2;
+        let operacao;
+        let resultado;
+ 
+        valor1 = Number(prompt("Digite o primeiro valor"));
+        valor2 = Number(prompt("Digite o segundo valor"));
+        operacao =prompt("Escolha a operacao")
+ 
+ 
+        resultado;
+if (operacao = "somar") {
+    resultado = valor1 + valor2;
+} else if (operacao = "subtrair") {
+    resultado = valor1 - valor2;
+} else if (operacao = "multiplicar") {
+    resultado = valor1 * valor2;
+} else if (operacao = "dividir") {
+    resultado = valor1 / valor2;
+} else
+    console.log("Operação inválida.");
+ 
+        //console.log(permissao); Para mostrar no console do browse
+        document.getElementById('primeiroValor').innerHTML = valor1;
+        document.getElementById('segundoValor').innerHTML = valor2;
+        document.getElementById('operacaoEscolhida').innerHTML = operacao;
+        document.getElementById('resultadoFinal').innerHTML = resultado;
+ 
+    </script>
+    </body>
+</body>
+</html>

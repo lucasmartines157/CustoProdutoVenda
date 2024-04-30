@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nota de escola</title>
+</head>
+<body>
+    <body>
+        <h1>Nota de Escola</h1>
+       
+        <p>Resultado:<span id="resultado"></span></p>
+     
+    <script>
+        let nome;
+        let nota1;
+        let nota2;
+        let nota3;
+        let nota4;
+        let resultado;
+       
+     
+        nome = "Emerson Cauã" //prompt é oq vale como um escreval
+        nota1 = Number(prompt("Digite a sua primeira nota"))
+        nota2 = Number(prompt("Digite a sua segunda nota"))
+        nota3 = Number(prompt("Digite a sua terceira nota"))
+        nota4 = Number(prompt("Digite a sua quarta nota"))
+     
+        resultado = (nota1 + nota2 + nota3 + nota4)/4
+     
+        if(resultado <7){
+            resultado = "Você foi reprovado";
+        }else{
+            resultado = "Parabens!!! Você foi aprovado";
+        }
+       
+        document.getElementById('resultado').innerHTML = resultado;
+     
+    </script>
+     
+    </body>
+    
+</body>
+</html>

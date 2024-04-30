@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo da aula de hoje</title>
+</head>
+<body>
+
+    <h1>Voto Obrigatório ou Opcional</h1>
+<p>nome:<span id="nomepessoa"></span></p>
+<p>idade:<span id="idadepessoa"></span></p>
+<p>voto é:<span id="votopessoa"></span></p>
+
+<script>
+let nome;
+let idade;
+let voto;
+
+nome = prompt("Digite o seu nome");
+idade = prompt("Digite a sua idade");
+
+if(idade <=17){
+   permissao = "Seu voto é opcional";
+}else{
+permissao = "Seu voto é obrigatório";
+}
+if(idade >=65){
+   permissao = "Seu voto é opcional";
+}
+// console.log(permissao); Para mostrar no console do browse
+document.getElementById("nomepessoa").innerHTML = nome;
+document.getElementById('idadepessoa').innerHTML = idade;
+document.getElementById('votopessoa').innerHTML = permissao;
+</script>
+
+    
+</body>
+</html>
