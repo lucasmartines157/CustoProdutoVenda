@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+ 
+<body>
+    <h4>3. Some os números de 1 a 10, apresentando as somas parciais e, no final, o total. A impressão deve seguir o
+        padrão:
+ 
+        a 3 (soma do número 1 com o número 2)
+        b 6 (soma parcial com o número 3)
+        c 10 (soma parcial com o número 4)
+        d [...]
+        e 55 (soma parcial com o número 10)
+        f Soma total 55 .</h4>
+       
+    <p id="soma"></p>
+ 
+    <script>
+        let numero1 = 0;
+        let numero2 = "";
+ 
+       
+ 
+        for (let i = 1; i <= 10; i++) {
+            let somaParcial = 0;
+ 
+            for (let j = 1; j <= i; j++){
+                somaParcial += j;
+            }
+ 
+            numero1 += somaParcial;
+            numero2 += + somaParcial + " (soma parcial com o número " + i + ")<br>";
+           
+        }
+       
+        numero2 += "Soma total 55 "
+ 
+        document.getElementById("soma").innerHTML = numero2
+ 
+ 
+       
+ 
+ 
+ 
+    </script>
+ 
+</body>
+ 
+</html>

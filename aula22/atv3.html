@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atv3</title>
+</head>
+ 
+<body>
+    <h5>Some os numeros de 1 a 10, apresentando as somas parciais e, no final, o total. A impressão deve seguir o
+        padrão:
+ 
+        a 3 (somar numero 1 com o numero 2)
+        b 6 (somar parcial com o numero 3)
+        c 10 (somar parcial com o número 4)
+        d [...]
+        e 55 (somar parcial com o numero 10)
+        f Soma total 55 .</h5>
+       
+    <p id="soma"></p>
+ 
+    <script>
+        let n1 = 0;
+        let n2 = "";
+ 
+       
+        for (let i = 1; i <= 10; i++) {
+            let somarNumero = 0;
+ 
+ 
+ 
+            for (let j = 1; j <= i; j++){
+                somarNumero += j;
+            }
+ 
+ 
+            n1 += somarNumero;
+            n2 += + somarNumero + " (soma parcial com número " + i + ")<br>";
+           
+        }
+ 
+       
+        n2 += "Soma total 55 "
+ 
+ 
+        document.getElementById("soma").innerHTML = n2
+ 
+         
+    </script>
+ 
+</body>
+ 
+</html>
+ 
